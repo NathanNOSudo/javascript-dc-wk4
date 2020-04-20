@@ -1,3 +1,52 @@
-https://nodejs.org/en/knowle
+https://nodejs.org/en/knowledge
 
+Some links from Azam:
 
+http://www.tutorialspoint.com/javascript/javascript_tutorial.pdf
+
+https://www.codementor.io/johnnyb/javascript-cheatsheet-fb54lz08k
+
+http://www.adobe.com/devnet/archive/html5/articles/intro-to-javascript-for-the-total-beginner.html
+
+https://www.youtube.com/watch?v=yQaAGmHNn9s
+
+You can change the ownership of the directory so that you can open it without needing root privileges.
+
+$ sudo chown -R <user-name> <directory-name>
+
+Extras:
+
+Extra Activities
+- Create a Palindrome app in Javascript which will print whether a string is a palindrome or not
+
+ 
+
+- Create an app which removes duplicates from an array 
+
+Example: ["John","Mary", "Alex", "Steve", "Mary", "John"] 
+
+Result should be: ["John","Mary","Alex","Steve"] 
+
+ 
+
+- Create an app whichs returns true/false depending on if the item is in the array 
+
+- Create an app which finds the largest number in an array 
+
+- Create an app which finds the smalest number in an array 
+
+- Create FizzBuzz app 
+
+- Write an algorithm to sort an array in descending order [4,5,56,1,2,99,34,2,1] 
+
+- In a given sentence find the number of words
+
+- In a given word find number of vowels
+
+- Given start time and end time find the different between two times 
+
+- 
+
+- Use JavaScript to create a pyramid (see attached screenshot) 
+
+pyramid made of stars 1 star 3 star 5 start 7 star  9 star etc etc
