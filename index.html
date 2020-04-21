@@ -1,13 +1,61 @@
-cod<html>
+ <!-- Three components we need in the markup -->
+ <!-- ##################################-->
+ <!-- 1: a header with an input tag for the user to enter an item -->
+ <!-- 2: a section where to display tasks to do -->
+ <!-- 3: a section where to display tasks completed -->
+
+<html>
     <head>
-        
+        <title>To Do List</title>
+<style>
+/* Style the todo list with CSS */
+/* CSS variables to define our main colors */
+:root {
+    --font-color: #1d3436;
+    --body-bg-color: #f7f1e3;
+    --container-bg-color: #55efc4;
+    --todo-bg-color: #00b894;
+    --done-bg-color: #2ed573;
+    --svg-normal-color: #2d3436;
+    --svg-hover-color: #0984e3;
+    --svg-complete-color: #0984e3;
+    --svg-remove-color: #d63031;
+    --svg-remove-hover-color: #ff4757;
+}
+ /* Add google font and style the container */
+* {
+
+}
+
+</style>
+
+<script src="toDoList.js"></script>   
     </head>
-    <body>HELLO JAVASCRIPT
+    <body>
+        <div id="container">
+            <header>
+                <input type="text" placeholder="Enter what you need to do..." id="item"/>
+                <button id="add">
+<!-- code below is one of w3 available svg, It is only adding a "+" icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+                            </path>
+                         </svg>                        
+                </button>
 
-
-
-
-    <script src="js/app.js"></script>
+            </header>
+            <h2>To Do</h2>
+            <ul class="todo" id="todo">
+<!--                 <li>item1
+                <span class="buttons">
+                    <button class="remove"></button>
+                    <button class="complete"></button>
+                </span>
+            </li> -->
+            </ul>
+            <h2>Completed</h2>
+            <ul class="completed" id="completed"></ul>
+        </div>
     </body>
 
 </html>
