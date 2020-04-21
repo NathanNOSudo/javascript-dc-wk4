@@ -29,11 +29,11 @@ Result should be: ["John","Mary","Alex","Steve"]
 
  
 
-- Create an app whichs returns true/false depending on if the item is in the array 
+- Create an app which returns true/false depending on if the item is in the array 
 
 - Create an app which finds the largest number in an array 
 
-- Create an app which finds the smalest number in an array 
+- Create an app which finds the smallest number in an array 
 
 - Create FizzBuzz app 
 

@@ -3,9 +3,10 @@
  <!-- 1: a header with an input tag for the user to enter an item -->
  <!-- 2: a section where to display tasks to do -->
  <!-- 3: a section where to display tasks completed -->
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <title>To Do List</title>
 <style>
 /* Style the todo list with CSS */
@@ -24,12 +25,123 @@
 }
  /* Add google font and style the container */
 * {
+    font-family: 'Josefin Sans' , sans-serif;
+    padding: 0;
+    margin: 0;
+    color: var(--font-color);
+}
 
+body {
+    background-color:  var(--body-bg-color);
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    background-color: var(--container-bg-color);
+    padding: 2%;
+    min-height: 30vh;
+    min-width:  30vw;
+    width: auto;
+    height: auto;
+    margin-top: 10vh;
+    border-radius: 5%;
+}
+h2 {
+     margin-bottom: 40px;
+     margin-top: 40px;
+     display: inline-block;
+ }
+
+/* This one will add the underline */
+h2::after {
+  content: "";
+  border-bottom: 5px solid black;
+  display: block;
+  width: auto;
+}
+
+/* make the `header` a flex container to easily stack our elements in a column and automatically space them with `space-between` */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header input {
+    min-height: 40px;
+    width: 100%;
+    border: none;
+    padding-left: 5%;
+    background-color: var(--body-bg-color);
+}
+/* Reminder to adjust this simple styling of 'input', only did this for debug */
+header button {
+    min-width: 40px;
+    background: none;
+    border: none; 
+    font-size: 2rem;
+}
+
+/* Make the 'li' stretch entire width and add some border to it  */
+li {
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    background-color: var(--todo-bg-color);
+    padding: 2%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+li .buttons {
+    min-width: 100%;
+    margin-left: auto;
+    display: inline;
+}
+
+li .buttons button {
+    background: none;
+    min-width: 40px;
+    border: none;
+    font-size: 2rem;
+}
+/* Apply a different style to the completed tasks */
+.completed li {
+    background-color: var(--done-bg-color);
+}
+
+.completed .complete svg path {
+    fill: var(--svg-complete-color);
+}
+
+/* Style the svg icons */
+svg {
+  max-width: 25px;
+}
+
+/* Define the normal color */
+svg path {
+  fill: var(--svg-normal-color);
+}
+
+/* Change the color when we hover the icons*/
+button:hover svg path {
+  fill: var(--svg-hover-color);
+}
+
+/* Make the remove icon red*/
+.remove svg path {
+  fill: var(--svg-remove-color);
+}
+
+/* make the remove icon a different color on hover */
+.remove:hover svg path {
+  fill: var(--svg-remove-hover-color);
 }
 
 </style>
-
-<script src="toDoList.js"></script>   
+<script src="toDoList.js"></script><link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet" />   
     </head>
     <body>
         <div id="container">
@@ -44,6 +156,7 @@
                 </button>
 
             </header>
+
             <h2>To Do</h2>
             <ul class="todo" id="todo">
 <!--                 <li>item1
