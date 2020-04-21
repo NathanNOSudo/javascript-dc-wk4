@@ -51,11 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
         let list = document.getElementById( "todo" );
         // create an 'li'
         let item = document.createElement( 'li' );
-        //set the inside of `li` the same as the parameter that we passed in the function
+        //set the inside of `li` the same as the parameter passed in the function
         //which is going to be the value set by the user in the input field
         item.innerText = text;
 
-         //create container for our buttons remove and complete
+         //create container for both the buttons remove and complete
         let buttons = document.createElement('div');
         buttons.classList.add("buttons");
         
