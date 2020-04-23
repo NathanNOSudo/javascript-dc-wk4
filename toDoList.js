@@ -1,4 +1,4 @@
-// Add functionality to the to do list so it will work. wrap everything in an EventListner so it waits for the todolist document to load before actually running the code. this should ensure my page is loading without anything slowing it down on my end
+// Add functionality to the to do list so it will work. wrap everything in an EventListener so it waits for the todolist document to load before actually running the code. this should ensure my page is loading without anything slowing it down on my end
 document.addEventListener('DOMContentLoaded', () => {
     // button to add new item
     let addButton = document.querySelector("#add");
