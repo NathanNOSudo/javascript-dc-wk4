@@ -59,3 +59,62 @@ https://www.w3resource.com/javascript-exercises/javascript-basic-exercises.php
 In this activity, you will create a webpage which will take firstname, lastname as input from the user. Once, the user fills in their firstname and lastname and clicks the submit button, you will concatenate their firstname and lastname together to display their fullname. 
 
 In this activity you are going to present the user with two buttons wit labels "Red" and "Blue". When the user clicks on the red button then the page background will change to red and when the user clicks on the blue button, page background will change to blue. 
+
+######################### Wednesday ##################################
+
+1) Use a map function to return an array which will return a double of each number. 
+
+Example: 
+
+input: [1,2,3,4] 
+
+output: [1,4,6,8] 
+
+2) Use the filter function to return even numbers from an array 
+
+Example: 
+
+input: [2,3,4,5,6,7,8,10]
+
+output: [2,4,6,8,10]
+
+3) Use the find function to return the object with name is "Jay" 
+
+Example: 
+
+input:
+
+let users = [
+  {name: "Jay", age: 34}, 
+  {name: "John", age: 20}, 
+  {name: "Mary", age: 45}
+]
+output: 
+
+{name: "Jay", age: 34}
+
+
+In this activitly you will display the title and body of all the posts in the console. 
+
+Download the "posts.js" file attached below. The "posts.js" file contains the "posts" variable which refer to all the posts.  
+
+Add a new file "app.js" in your project. Inside app.js file you will write code to iterate through all the posts and display their title and description. 
+
+
+Your task is to display news to the user. The news.zip file (attached) already has a JSON formatted object which contains the news. Create a page which displays the following information related to the news. 
+
+author
+title
+description
+url (hyperlink to go to the news)
+urlToImage (image associated with the news) 
+publishedAt
+HARD MODE: 
+
+- There is a js file called "sources.js" in the attached download. Use that file to display all the sources. When the user clicks on a particular source then show the user news from that source. If there is no news for the source then display no news found. 
+
+ 
+
+HARDER MODE: 
+
+- Only display the sources which contains at least one news item. 
