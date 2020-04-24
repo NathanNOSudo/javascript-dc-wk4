@@ -7,7 +7,7 @@ let stockQuoteHeading = document.getElementById("stockQuoteHeading")
 
 
 //Arrow FUNCTIONS
-getQuoteButton.addEventListener("click",function() => {
+getQuoteButton.addEventListener("click", function() => {
     console.log(this)
     let symbol = stockSymbolTextBox.value
     
@@ -35,3 +35,19 @@ setTimeout(() => {
 
 
 }) */
+//Difference between let and var
+//To be safe best to use let unless a rare situation requires hoisting then use var.
+/* function sayGreetings() {
+
+    var name = "JohnnyBoy"
+    //variable hoisting shown
+    if(1 == 1) {
+        var name = "Mary"
+        var age = 23
+    }
+
+    console.log(name)
+    console.log(age)
+}
+
+sayGreetings() */
