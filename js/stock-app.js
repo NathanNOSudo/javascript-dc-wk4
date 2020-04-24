@@ -5,7 +5,20 @@ let getQuoteButton = document.getElementById("getQuoteButton")
 // stockQuoteHeading is H1 element
 let stockQuoteHeading = document.getElementById("stockQuoteHeading")
 
-getQuoteButton.addEventListener("click",function(){
+
+//Arrow FUNCTIONS
+getQuoteButton.addEventListener("click",function() => {
+    console.log(this)
+    let symbol = stockSymbolTextBox.value
+    
+})
+
+//ARROW FUNCTIONS
+setTimeout(() => {
+
+} ,3000)
+
+/* getQuoteButton.addEventListener("click",function(){
     let symbol = stockSymbolTextBox.value
     
     setInterval(function() {
@@ -18,7 +31,7 @@ getQuoteButton.addEventListener("click",function(){
     
 }, 3000 )
 
-    // {name: "Apple", price: 227}
+    // spe{name: "Apple", price: 227}
 
 
-})
+}) */
