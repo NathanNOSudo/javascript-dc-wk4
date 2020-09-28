@@ -3,18 +3,11 @@ let nameHeading = document.getElementById("nameHeading")
 
 let firstName = "Nathan"
 let lastName = "Doe"
-let  age = 34
+let  age = 32
 
 // Nathan, Doe
 
 //nameHeading.innerHTML = "Greetings" + firstName + " , " + lastName
-
-
-
-
-
-
-
 
 let taskTextBox = document.getElementById("taskTextBox")
 let addTaskButton = document.getElementById("addTaskButton")
@@ -53,9 +46,5 @@ addTaskButton.addEventListener("click", function () {
     //Adding the new html to the end of the ul list.
     // beforeend is used to add the new HTML to the end of the ul
     taskList.insertAdjacentHTML('beforeend' , taskItem)
-
-
-
-
 })
 
